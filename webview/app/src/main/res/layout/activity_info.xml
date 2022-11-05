@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/belakang"
+    tools:context=".info">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Info Pola Tanam"
+        android:textSize="35dp"
+        android:textColor="#bafad3"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="80dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Ada empat jenis pola tanaman. Pilih sesuai dengan karakteristik daerah Anda. Kami merekomendasikan jenis 'Pola Segitiga' untuk pola dasar."
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="16dp"
+        android:textColor="#bafad3"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="(Pola Tanam Persegi)"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#bafad3"
+        />
+
+    <ImageView
+        android:id="@+id/kotak"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/kotak"
+        android:layout_marginTop="227dp"
+        android:foregroundGravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="(Pola Tanam Segitiga)"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="315dp"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#bafad3"
+        />
+
+    <ImageView
+        android:id="@+id/segitiga"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/segitiga"
+        android:layout_marginTop="342dp"
+        android:layout_marginHorizontal="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="(Pola Tanam Hexagonal)"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="428dp"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#bafad3"
+        />
+
+    <ImageView
+        android:id="@+id/hexagonal"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/hexagon"
+        android:layout_marginTop="455dp"
+        android:layout_marginHorizontal="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="(Pola Tanam Persegi Panjang)"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="543dp"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#bafad3"
+        />
+
+    <ImageView
+        android:id="@+id/PersegiPanjang"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/persegipanjang"
+        android:layout_marginTop="570dp"
+        android:layout_marginHorizontal="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="665dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/pindah"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textColor="#196533"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
